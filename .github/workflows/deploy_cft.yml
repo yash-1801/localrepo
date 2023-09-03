@@ -20,6 +20,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1  
 
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
       - name: Deploy CloudFormation stack
         run: aws cloudformation deploy --template-file C:/Users/ACER/Desktop/CDAC 2023/DBDA 2023/GIT/GIT_DEMO/LocalRepo/.github/workflows/deploy_cft.yml --stack-name CFTStack 
 
