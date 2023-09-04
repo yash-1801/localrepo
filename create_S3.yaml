@@ -7,7 +7,7 @@ Parameters:
 Resources:
   MyS3Bucket:
     Type: AWS::S3::Bucket
-    DeletionPolicy: DELETE
+    DeletionPolicy: Delete
     Properties:
       BucketName:
         Ref: MyBucketName
