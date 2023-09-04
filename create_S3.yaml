@@ -2,12 +2,12 @@ Parameters:
   MyBucketName:
     Type: String
     Description: Enter Bucket name
-    DeletionPolicy: DELETE
     Default: grp-5-git-actions-malhar
 
 Resources:
   MyS3Bucket:
     Type: AWS::S3::Bucket
+    DeletionPolicy: DELETE
     Properties:
       BucketName:
         Ref: MyBucketName
