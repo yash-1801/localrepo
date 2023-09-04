@@ -2,7 +2,8 @@ Parameters:
   MyBucketName:
     Type: String
     Description: Enter Bucket name
-    Default: git-actions
+    DeletionPolicy: DELETE
+    Default: grp-5-git-actions-malhar
 
 Resources:
   MyS3Bucket:
