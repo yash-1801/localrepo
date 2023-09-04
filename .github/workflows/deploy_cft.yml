@@ -24,7 +24,7 @@ jobs:
       - name: Deploy CloudFormation stack
         run: |
           aws cloudformation deploy \
-            --stack-name actions_cft \
+            --stack-name actionsCFT \
             --template-file create_S3.yaml \
             --capabilities CAPABILITY_IAM
         env:
